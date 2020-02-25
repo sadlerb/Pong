@@ -63,12 +63,12 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener	{
 	
 	public void keyPressed(KeyEvent e){
 		
-		if (e.getKeyCode() == KeyEvent.VK_UP){
+		if (e.getKeyCode() == KeyEvent.VK_UP){// makes player move up if up key is pressed
 			
 			player.setYVelocity(-4);
 		}
 		
-		else if (e.getKeyCode() == KeyEvent.VK_DOWN){
+		else if (e.getKeyCode() == KeyEvent.VK_DOWN){// makes player move down if down key is pressed
 			
 			player.setYVelocity(4);
 		}
@@ -80,14 +80,14 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener	{
 	
 	public void keyReleased(KeyEvent e){
 		
-		if (e.getKeyCode() == KeyEvent.VK_UP || e.getKeyCode() == KeyEvent.VK_DOWN){
+		if (e.getKeyCode() == KeyEvent.VK_UP || e.getKeyCode() == KeyEvent.VK_DOWN){// sets player velocity to 0 once key is released
 			
 			player.setYVelocity(0);
 			
 		}
 	}
 	
-	public void keyTyped(KeyEvent e){
+	public void keyTyped(KeyEvent e){// key typed event is not used
 		
 		
 		
