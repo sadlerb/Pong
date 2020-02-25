@@ -2,12 +2,12 @@ import java.awt.Graphics;
 import java.awt.Color;
 public class Player {
 	
-	final private int x = 30;
+	final private int x = 30; // sets the players x position
 	
-	private int y = Pong.WINDOW_HEIGHT /2 ;
+	private int y = Pong.WINDOW_HEIGHT /2 ;// sets player initial position to the middle of the window
 	private int yVelocity = 0;
-	private int width = 20;
-	private int height = 50;
+	private int width = 20;// player width
+	private int height = 50;// player height
 	
 	
 	public Player (){
@@ -18,18 +18,18 @@ public class Player {
 	
 	public void update (){
 		
-		y = y + yVelocity;
+		y = y + yVelocity; // adds the current velocity to player y position to create movement
 		
 		
 	}
 	
-	public void paint (Graphics g){
+	public void paint (Graphics g){// creates player based on specified size and color
 		g.setColor(Color.WHITE);
 		g.fillRect(x, y , width,height);
 		
 	}
 	
-	public void setYVelocity(int speed){
+	public void setYVelocity(int speed){// sets player velocity
 		
 		yVelocity = speed;
 	}
