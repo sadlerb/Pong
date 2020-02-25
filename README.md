@@ -19,17 +19,7 @@ Press the down arrow key to move down
 
 
 
-----------------------------------------------------------------------------
----------------------------------------------------------------------------
-KNOWN ISSUES
-
-23/02/2020 
-- Paddle and ball collision is not accurate
-- Paddle becomes unresponsive when the up and down keys are pressed in quick succession
-- Computer is dumb
-
-
-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 PLANNED ADDITIONS
 
 - Sounds to communicate to the player that collision occured
